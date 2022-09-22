@@ -1,0 +1,8 @@
+.navbar {
+  @apply flex items-center pl-10 sm:pl-20 gap-10 h-[80px] sm:h-[120px] bg-gradient-to-r from-green-700 to-rose-500;
+}
+.navbar__items {
+  @apply text-white font-bold text-lg sm:text-3xl text-transparent 
+ bg-gradient-to-b bg-clip-text from-cyan-400 to-white
+ hover:from-cyan-500 hover:to-cyan-300 focus:text-white;
+}

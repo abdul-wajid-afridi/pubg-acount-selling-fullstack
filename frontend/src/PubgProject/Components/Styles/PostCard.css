@@ -1,0 +1,15 @@
+.post__card {
+  @apply flex flex-col h-[500px] w-[350px] relative shadow-xl shadow-slate-400;
+}
+
+.post__card__upper {
+  transition: all 0.3s ease-in;
+  @apply opacity-0 shadow-lg bg-[rgba(39,89,255,0.51)] py-4 flex flex-row w-full justify-between absolute top-0 px-4;
+}
+
+.post__card:hover .post__card__upper {
+  opacity: 1;
+}
+.post__card__upper p:nth-child(1) {
+  @apply text-gray-700 font-bold capitalize;
+}

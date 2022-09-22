@@ -1,0 +1,10 @@
+.home__card {
+  @apply flex w-[300px] h-[500px] flex-col  items-center 
+  border shadow-xl shadow-green-700 relative;
+}
+.home__card img {
+  @apply h-[400px] w-[300px];
+}
+.home__heart {
+  @apply absolute bottom-5 right-5  sm:text-3xl text-xl;
+}

@@ -1,0 +1,39 @@
+.navbar__container {
+  @apply relative h-[130px] bg-blue-800 flex justify-between items-center px-3;
+}
+.navbar__items {
+  @apply text-xl text-white tracking-wide font-bold;
+}
+.navbar__menu {
+  transition: 0.3s ease-in;
+  @apply flex gap-4;
+}
+.navbar__logo {
+  @apply text-white text-3xl;
+}
+.navbar__icons {
+  @apply text-white text-3xl opacity-0;
+}
+.navbar__items {
+  transition: 0.1s ease-in;
+  @apply text-xl px-4 py-1 hover:bg-blue-600 text-white tracking-wide font-bold;
+}
+@media (max-width: 700px) {
+  .navbar__icons {
+    @apply text-white text-3xl opacity-100;
+  }
+  .navbar__menu {
+    /* z-index: 999; */
+    transition: 0.3s ease-in;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    @apply flex z-10 flex-col absolute top-0 mt-[127px] left-0 h-[50vh] bg-blue-800 w-full;
+  }
+  .navbar__menu.navbar__active {
+    clip-path: polygon(0 0, 100% 0, 55% 0, 51% 0);
+    @apply absolute  opacity-0;
+  }
+  .navbar__items {
+    transition: 0.1s ease-in;
+    @apply text-xl py-1 hover:bg-blue-600 text-white tracking-wide font-bold;
+  }
+}
